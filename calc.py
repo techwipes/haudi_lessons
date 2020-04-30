@@ -5,6 +5,8 @@ basic calc
 
 """
 
+from colorama import  Fore, Back,Style
+
 operator = input("What do you want to do? (+, -, *, / : ")
 
 a = float( input("Enter the first number: "))
