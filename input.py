@@ -7,6 +7,6 @@ basic lesson about input
 name = input ("Enter your name: ")
 age = input ("Enter your age: ")
 
-print("hello, " + name + "!")
+print("Hello, " + name + "!")
 print("You are " + age + " years old!")
 
