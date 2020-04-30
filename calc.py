@@ -7,27 +7,32 @@ basic calc
 from colorama import init
 from colorama import Fore, Back,Style
 
+# use Colorama to make Termcolor work on Windows too
+init()
+
+print(Back.MAGENTA)
+
 operator = input("What do you want to do? (+, -, *, / : ")
+
+print(Back.MAGENTA)
 
 a = float( input("Enter the first number: "))
 b = float( input("Enter the second number: "))
 
+print(Back.MAGENTA)
+
 if operator == "+":
     c = a + b
     print ("Result: = " + str(c) )
-    
 elif operator == "-":
     c = a - b
     print ("Result: = " + str(c) )
-    
 elif operator == "*":
     c = a * b
     print ("Result: = " + str(c) )
-
 elif operator == "/":
     c = a / b
     print ("Result: = " + str(c) )
-    
 else:
     print("Error! Incorrect Arithmetic Operator! ")
 
