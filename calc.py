@@ -4,8 +4,8 @@
 basic calc
 
 """
-
-from colorama import  Fore, Back,Style
+from colorama import init
+from colorama import Fore, Back,Style
 
 operator = input("What do you want to do? (+, -, *, / : ")
 
