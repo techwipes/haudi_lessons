@@ -10,6 +10,7 @@ from colorama import Fore, Back,Style
 # use Colorama to make Termcolor work on Windows too
 init()
 
+print(Fore.BLACK)
 print(Back.MAGENTA)
 
 operator = input("What do you want to do? (+, -, *, / : ")
@@ -19,7 +20,7 @@ print(Back.MAGENTA)
 a = float( input("Enter the first number: "))
 b = float( input("Enter the second number: "))
 
-print(Back.MAGENTA)
+print(Back.YELLOW)
 
 if operator == "+":
     c = a + b
@@ -36,3 +37,4 @@ elif operator == "/":
 else:
     print("Error! Incorrect Arithmetic Operator! ")
 
+input()
