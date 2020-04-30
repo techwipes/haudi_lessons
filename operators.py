@@ -5,6 +5,8 @@
  +, -, *, /, **, %
 """
 
+import math
+
 a = 5
 b = 10
 
@@ -48,7 +50,8 @@ print( a )
 d = 5.65
 
 print( round(d) )
-
+print( math.floor(d) )
+print( math.ceil(d) )
 
 
 
