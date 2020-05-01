@@ -24,5 +24,9 @@ print(" Temperature is: " + str(temperature) + u"\u00b0" + "C" )
 print(" Wind is " + str(wind) + "m/s now ")
 print(" Humidity is " + str(humidity) + "% now ")
 
-
-
+if temperature < 10:
+    print("It's cold outside, dress in warm clothes")
+elif temperature < 20:
+    print("It's warm outside, dress easy")
+else:
+    print("It's very warm outside, enjoy!")
