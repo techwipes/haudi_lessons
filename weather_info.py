@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Apr 30 21:10:55 2020
 
-@author: bato
+script for getting weather info
+
 """
 
+import pyowm
 
+owm = pyowm.OWM('08ba5600a00017c0ee587931bfcfefa2')
