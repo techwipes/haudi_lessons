@@ -22,12 +22,12 @@ temperature = w.get_temperature('celsius')["temp"]
 sunrise = w.get_sunrise_time('iso')  
 sunset = w.get_sunset_time('iso')  
 
-print("In city " + city + " " + w.get_detailed_status() + " now ")
-print("Temperature is: " + str(temperature) + u"\u00b0" + "C" )
-print("Wind is " + str(wind) + "m/s now ")
-print("Humidity is " + str(humidity) + "% now ")
-print("The sun rises in " + sunrise )
-print("The sun sets in " + sunset )
+print("In city " + city + " " + w.get_detailed_status() + " now")
+print("Temperature is: " + str(temperature) + u"\u00b0" + "C")
+print("Wind is " + str(wind) + "m/s now")
+print("Humidity is " + str(humidity) + "% now")
+print("The sun rises in " + sunrise)
+print("The sun sets in " + sunset)
 
 
 if temperature < 10:
