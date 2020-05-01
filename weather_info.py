@@ -15,7 +15,7 @@ city = input("What city do you wonna check? ")
 observation = owm.weather_at_place(city)
 w = observation.get_weather()
 
-
+    
 wind = w.get_wind()["speed"]                
 humidity = w.get_humidity()            
 temperature = w.get_temperature('celsius')["temp"]
