@@ -15,14 +15,14 @@ city = input("What city do you wonna check? ")
 observation = owm.weather_at_place(city)
 w = observation.get_weather()
 
-wind = w.get_wind()                
+wind = w.get_wind()["speed"]                
 humidity = w.get_humidity()            
-temperature = w.get_temperature('celsius')
+temperature = w.get_temperature('celsius')["temp"]
 
 print(" In city " + city + " " + w.get_detailed_status() + " now ")
-print(" Temperature is: " + str(temperature) )
-print(" Wind is " + str(wind) + "now ")
-print(" Humidity is " + str(humidity) + "now ")
+print(" Temperature is: " + str(temperature) + u"\u00b0" + "C" )
+print(" Wind is " + str(wind) + "m/s now ")
+print(" Humidity is " + str(humidity) + "% now ")
 
 
 
