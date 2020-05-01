@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri May  1 20:01:20 2020
+simple telegram bot created with TelegramBotAPI
 
-@author: bato
 """
 
+import telebot
 
+bot = telebot.TeleBot("1195902264:AAHghac53utakQM3veYR2htM1PJ21ELPqmc")
