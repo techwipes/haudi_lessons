@@ -6,16 +6,27 @@ script for getting weather info
 """
 
 import pyowm
+from pyowm import exceptions
+
 
 owm = pyowm.OWM('08ba5600a00017c0ee587931bfcfefa2', language = "ru")
 
 city = input("What city do you wonna check? ")
 
-# Search for current weather in city 
-observation = owm.weather_at_place(city)
+# Search for current weather in city, with checking for wrong name of city
+while True:
+    try:
+        observation = owm.weather_at_place(city)
+        if type(str(observation)) == str:
+            break
+    except:
+        print("Wrong City!")
+        city = input("What city do you wonna check? ")
+
+
 w = observation.get_weather()
 
-    
+
 wind = w.get_wind()["speed"]                
 humidity = w.get_humidity()            
 temperature = w.get_temperature('celsius')["temp"]
