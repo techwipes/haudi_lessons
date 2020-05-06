@@ -6,7 +6,7 @@ script for getting weather info
 """
 
 import pyowm
-from pyowm import exceptions
+from pyowm.exceptions import OWMError
 
 
 owm = pyowm.OWM('08ba5600a00017c0ee587931bfcfefa2', language = "ru")
@@ -17,7 +17,7 @@ city = input("What city do you wonna check? ")
 while True:
     try:
         observation = owm.weather_at_place(city)
-        if type(str(observation)) == str:
+        if observation is not None:
             break
     except:
         print("Wrong City!")
